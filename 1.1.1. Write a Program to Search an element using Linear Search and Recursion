@@ -1,0 +1,16 @@
+#include<stdio.h>
+int linearSearch(int a[], int i,int n , int key){
+		
+		if(i>=n) {
+			return -1;
+		}
+	if (a[i]==key){
+		return i;
+	}
+	return linearSearch(a,i+1,n,key);
+}
+void read1(int a[],int n){
+	printf("Enter %d elements : ",n);
+	for (int j=0;j<n;j++){
+		scanf("%d",&a[j]);
+}}
